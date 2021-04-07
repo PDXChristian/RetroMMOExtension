@@ -1,7 +1,7 @@
 {
     "name" : "RetroMMO Online Checker",
     "description" : "Extension to display who is online on RetroMMO",
-    "version" : "0.4",
+    "version" : "0.6",
     "manifest_version" : 3,
     "background" : {
         "service_worker" : "background.js"
