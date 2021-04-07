@@ -1,0 +1,70 @@
+@font-face {
+    font-family: 'retro';
+    src:url('chrome-extension://__MSG_@@extension_id__/font/retro.ttf');
+}
+
+body {
+    display: inline-block;
+    background-color: black;
+    font-family: retro;
+    position: relative;
+    z-index: 1;
+}
+
+#background-image-disp {
+    padding-left: 20px;
+    padding-right: 20px;
+    height: 450px;
+    max-height:450px;
+    width: 300px;
+    max-width: 300px;
+    background-image:url('chrome-extension://__MSG_@@extension_id__/images/bg.png');
+    background-size: 100% 100%;
+    position: absolute;
+    z-index: 5;
+}
+
+h1 {
+    font-size: 48px;
+    color: white;
+    position: relative;
+    z-index: 5;
+}
+
+#online-block {
+    padding-left: 20px;
+    padding-right: 20px;
+    height: 278px;
+    max-height:278px;
+    width: 300px;
+    max-width: 300px;
+    overflow-y:scroll;
+    position: relative;
+    z-index: 10;
+}
+
+#play-button {
+    margin: 20px;
+    height: 75px;
+    width: 300px;
+    outline: none;
+    border: none;
+    font-family: retro;
+    font-size: 24px;
+    color: white;
+    background-image: url('chrome-extension://__MSG_@@extension_id__/images/playButton.png');
+}
+
+#online {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    color: white;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 20px;
+    font-size: 24px;
+}

@@ -1,0 +1,31 @@
+{
+    "name" : "RetroMMO Online Checker",
+    "description" : "Extension to display who is online on RetroMMO",
+    "version" : "0.4",
+    "manifest_version" : 3,
+    "background" : {
+        "service_worker" : "background.js"
+    },
+    "permissions": ["storage"],
+    "action": {
+        "default_popup": "popup.html",
+        "default_icon": {
+            "16": "/images/icn16.png",
+            "32": "/images/icn32.png",
+            "48": "/images/icn48.png",
+            "128": "/images/icn128.png"
+        }
+    },
+    "icons": {
+        "16": "/images/icn16.png",
+        "32": "/images/icn32.png",
+        "48": "/images/icn48.png",
+        "128": "/images/icn128.png"
+    },
+    "web_accessible_resources": [
+        {
+            "resources": [ "images/bg.png", "font/retro.ttf", "images/button.png", "images/playButton.png" ],
+            "matches": [ "<all_urls>" ]
+        }
+    ]
+}
