@@ -3,6 +3,9 @@ var currentDate = new Date();
 
 async function loadData() {
     chrome.storage.local.get(['prevDate'], async function(result){
+        chrome.storage.local.get(['onlineUsers'], async function(result) {
+            document.getElementById('users-online').innerHTML = `Users online: ${result.onlineUsers}`;
+        });
         chrome.storage.local.get(['prevData'], async function(result){
             document.getElementById('online').innerHTML = result.prevData
         });
@@ -28,6 +31,8 @@ async function loadData() {
 }
 
 async function getOnline(data) {
+    document.getElementById('users-online').innerHTML = `Users Online: ${data.length}`;
+    chrome.storage.local.set({onlineUsers: data.length});
     for(let who of data) {
         try {
             let obj = await(await fetch(`https://play.retro-mmo.com/users/${who}.json`)).json()

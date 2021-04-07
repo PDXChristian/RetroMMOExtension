@@ -33,13 +33,21 @@ h1 {
     color: white;
     position: relative;
     z-index: 5;
+    margin-bottom: -8px;
+}
+
+#users-online {
+    font-size: 24px;
+    color:white;
+    position: relative;
+    z-index: 5;
 }
 
 #online-block {
     padding-left: 20px;
     padding-right: 20px;
-    height: 278px;
-    max-height:278px;
+    height: 250px;
+    max-height:250px;
     width: 300px;
     max-width: 300px;
     overflow-y:scroll;
