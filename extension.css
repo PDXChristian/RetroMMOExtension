@@ -67,6 +67,10 @@ h1 {
     background-image: url('chrome-extension://__MSG_@@extension_id__/images/playButton.png');
 }
 
+#play-button:hover {
+    color: brown;
+}
+
 #online {
     list-style-type: none;
     padding: 0;
