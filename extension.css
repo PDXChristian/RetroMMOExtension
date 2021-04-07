@@ -11,6 +11,10 @@ body {
     z-index: 1;
 }
 
+::-webkit-scrollbar {
+    display: none;
+}
+
 #background-image-disp {
     padding-left: 20px;
     padding-right: 20px;
