@@ -31,7 +31,6 @@ async function loadData() {
 }
 
 async function getOnline(data) {
-    document.getElementById('users-online').innerHTML = `Users Online: ${data.length}`;
     chrome.storage.local.set({onlineUsers: data.length});
     for(let who of data) {
         try {
@@ -44,6 +43,7 @@ async function getOnline(data) {
             console.log('error' + e);
         }
     }
+    document.getElementById('users-online').innerHTML = `Users Online: ${data.length}`;
     return online;
 }
 
